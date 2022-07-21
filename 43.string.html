@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str="Hello Thank you good luck to you";
+
+        document.write(str,"<br>");
+        document.write(str.charAt(16),"<br>"); //charAt: 16번째 문자 출력
+        document.write(str.indexOf("you"),"<br>"); //indexOf: 인덱스 번호
+        document.write(str.indexOf("you",16),"<br>"); 
+        document.write(str.lastIndexOf("you"),"<br>"); //끝에서 부터 you를 찾음
+        document.write(str.lastIndexOf("you",25),"<br>"); 
+        document.write("========================<br>"); 
+        document.write(str.match("luck"),"<br>"); //해당 문자를 찾아서 출력
+        document.write(str.search("you"),"<br>"); //you에 해당되는 인덱스 번호 
+        document.write(str.substr(21,4),"<br>"); //index 21번에서 4글자 luck
+        document.write(str.substring(6,11),"<br>"); //index 6번에서 11 앞에까지 문자 thank
+        document.write(str.replace("you","me"),"<br>"); //you->me 첫번째 you만 바뀜
+        document.write("========================<br>");
+        document.write(str.toLocaleLowerCase(),"<br>"); //전체 소문자
+        document.write(str.toLocaleUpperCase(),"<br>"); //전체 대문자
+        document.write(str.length,"<br>"); //문자열 총 수 , length는 메소드 아니고 속성 
+        document.write("========================<br>");
+        var arr = str.split(" "); //스페이스로 구분해서 arr에 다음 
+        document.write(arr[0],"<br>"); //Hello
+        document.write(arr[4],"<br>"); //luck
+        document.write(String.fromCharCode(65),"<br>"); // String객체 아스키코드 65번 출력->A
+        document.write(str.charCodeAt(0),"<br>"); //0번째 인덱스의 아스키 코드(H의 아스키코드 72)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
